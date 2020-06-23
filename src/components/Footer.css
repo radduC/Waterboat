@@ -1,0 +1,27 @@
+.footer {
+	background-color: #333333;
+	color: white;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.footer-logo,
+.footer-nav {
+    margin: 0 20px;
+    padding: 0;
+}
+
+.footer-nav {
+	list-style: none;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}

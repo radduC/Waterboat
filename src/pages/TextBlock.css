@@ -1,0 +1,6 @@
+.text-block {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+	margin: 20px;
+}

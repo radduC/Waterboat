@@ -1,0 +1,14 @@
+.rezervari-titlu {
+	text-align: center;
+}
+
+.rezervari-tabel {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+	border: 1px solid #ccc;
+	padding: 10px 200px 10px 10px;
+}
