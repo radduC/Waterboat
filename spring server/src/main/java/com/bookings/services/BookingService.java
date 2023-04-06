@@ -14,9 +14,10 @@ import java.util.Scanner;
 @Component
 public class BookingService {
     private final String bookingData = "data.txt";
-    private final List<Booking> bookings = new ArrayList<>();
 
     public List<Booking> getBookings() {
+        List<Booking> bookings = new ArrayList<>();
+
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(bookingData)))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
@@ -27,7 +28,6 @@ public class BookingService {
                 booking.setDateFrom(data[1]);
                 booking.setDateTo(data[2]);
                 booking.setPhone(data[3]);
-
                 bookings.add(booking);
             }
 
