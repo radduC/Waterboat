@@ -24,7 +24,9 @@ public class BookingController {
     @GetMapping("/booking")
     public ResponseEntity<List<Booking>> getBookings() {
         var bookings = bookingService.getBookings();
-        return ResponseEntity.status(HttpStatus.OK).body(bookings);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(bookings);
     }
 
     @PostMapping("/booking")
@@ -32,6 +34,8 @@ public class BookingController {
         boolean isOk = bookingService.addBooking(booking.toString());
         BookingResponse bookingResponse = new BookingResponse();
         bookingResponse.setSuccess(isOk);
-        return ResponseEntity.status(HttpStatus.OK).body(bookingResponse);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(bookingResponse);
     }
 }
