@@ -1,4 +1,4 @@
-package com.bookings.models;
+package com.bookingservice.models;
 
 import lombok.Getter;
 import lombok.Setter;

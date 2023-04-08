@@ -1,6 +1,7 @@
-package com.bookings.services;
+package com.bookingservice.services;
 
-import com.bookings.models.Booking;
+
+import com.bookingservice.models.Booking;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 @Component
 public class BookingService {
-    private final String bookingData = "src\\main\\resources\\static\\data.txt";
+    private final String bookingData = "data.txt";
 
     public List<Booking> getBookings() throws FileNotFoundException {
         List<Booking> bookings = new ArrayList<>();
@@ -33,7 +34,6 @@ public class BookingService {
     }
 
     public boolean addBooking(String line) throws IOException {
-
         try (BufferedWriter outputBuffer = new BufferedWriter(new FileWriter(bookingData, true))) {
             outputBuffer.append(line);
             outputBuffer.newLine();
