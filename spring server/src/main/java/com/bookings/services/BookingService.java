@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 @Component
 public class BookingService {
-    private final String bookingData = "src\\main\\resources\\static\\data.txt";
+    private final String bookingData = "src/main/resources/data.txt";
 
     public List<Booking> getBookings() throws FileNotFoundException {
         List<Booking> bookings = new ArrayList<>();
